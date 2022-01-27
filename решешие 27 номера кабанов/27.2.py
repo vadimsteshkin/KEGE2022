@@ -14,3 +14,4 @@ for i in range(len(lst)-1):
         if (lst[i]-lst[j])%13==0 and (lst[j] * lst[i])%2==0:
             o+=1
 print(o)
+#18 1821568

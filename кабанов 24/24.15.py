@@ -1,5 +1,9 @@
 k=open('24_15.txt').read()
-for i in range(1,100):
-    if k.count(i*'D') >0:
-        print(i)
-
+lst=[]
+lst1=[]
+while k.find('D')!=-1:
+    lst.append(k.find('D'))
+    k=k.replace('D',' ',1)
+for i in range(len(lst)-1):
+    lst1.append(lst[i+1]-lst[i])
+print(str(lst1))

@@ -11,3 +11,4 @@ for i in b:
     if (m-i)%3!=0:
         print(m-i)
         break
+#127127 399762080

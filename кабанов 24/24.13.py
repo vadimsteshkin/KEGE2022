@@ -1,12 +1,9 @@
-k=list(open('24_13.txt').readline())
-print(k)
-lst=set()
-lt=[]
-for i in range(len(k)-1):
-    if k[i]>k[i+1]:
-        lst|={k[i],k[i+1]}
+k=open('24_13.txt').readline()
+c=m=k[0]
+for i in range(1,len(k)):
+    if k[i-1]>k[i]:
+        c+=k[i]
+        m=max(m,c,key=len)
     else:
-        lst=list(lst)
-        lt.extend([lst])
-        lst=set()
-print(lt)
+        c=k[i]
+print(m)
