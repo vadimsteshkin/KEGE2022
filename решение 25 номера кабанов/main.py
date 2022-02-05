@@ -1,4 +1,4 @@
-n = int(input())2
+n = int(input())
 a = []
 for i in range(n + 1):
     a.append(i)

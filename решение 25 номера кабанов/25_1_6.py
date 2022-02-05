@@ -3,15 +3,17 @@
 #
 # При этом в каждой из таких групп делителей не менее 70 элементов.
 # Для каждого найденного числа запишите само число и минимальный делитель, больший 1000.
+from functools import *
+@lru_cache()
 def f(n):
     s=set()
-    for i in range(1,int(pow(n,0.5))+1):
+    for i in range(2,int(pow(n,0.5))+1):
         if n%i==0:
             s|={i,n//i}
     return sorted(s)
 for i in range(326496, 649633):
     m=f(i)
-    m1=[x for x in m if x%2]
+    m1=[x for x in m if x%2==0]
     m2=[x for x in m if x%2==1]
     if len(m1)==len(m2) and len(m1)>70:
-        print(i,min([x for x in m1 if x>1000][0],[x for x in m2 if x>1000][0]),len(m1),len(m2))
+        print(i,min([x for x in m1 if x>1000][0],[x for x in m2 if x>1000][0]))
