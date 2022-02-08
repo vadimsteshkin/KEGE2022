@@ -1,14 +1,14 @@
-k=open('27B_3.txt')
-t=[]
-p=[]
+k=open('27A_3.txt')
+k65=0
+k5=0
+k13=0
 for i in range(int(k.readline())):
     m=int(k.readline())
     if m% 65==0:
-        
-    if m%5==0:
-        p.append(m)
+        k65+=1
+    elif m%5==0:
+        k5+=1
     elif m%13==0:
-        t.append(m)
-    
-print(p,t)
-print(len(p)*len(t))
+        k13+=1
+print(k65)
+print(k5*k13*k65)
