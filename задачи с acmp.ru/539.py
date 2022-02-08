@@ -1,5 +1,7 @@
-k=int(input())
-if k%2==0:
-    print(k//2)
+N = int(input())
+if N == 1:
+    print(0)
+elif N % 2 == 0:
+    print(N // 2)
 else:
-    print(k)
+    print(N)
