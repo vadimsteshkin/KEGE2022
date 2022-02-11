@@ -10,5 +10,4 @@ for i in range(int(k.readline())):
         k5+=1
     elif m%13==0:
         k13+=1
-print(k65)
-print(k5*k13*k65)
+print(k5+k13-k)
