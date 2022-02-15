@@ -2,27 +2,33 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "C/C++ Runner: Debug Session",
+      "name": "Python: Текущий файл",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "g++.exe build and debug active file",
       "type": "cppdbg",
       "request": "launch",
-      "args": [
-        ""
-      ],
+      "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+      "args": [],
       "stopAtEntry": false,
-      "cwd": "c:/Users/astes/PycharmProjects/solutions_ege_polyakov/курсы сириус/python",
+      "cwd": "${workspaceFolder}",
       "environment": [],
-      "program": "c:/Users/astes/PycharmProjects/solutions_ege_polyakov/курсы сириус/python/build/Debug/outDebug",
-      "internalConsoleOptions": "openOnSessionStart",
-      "MIMode": "gdb",
-      "miDebuggerPath": "gdb",
       "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:\\Programs\\msys64\\mingw64\\bin\\gdb.exe",
       "setupCommands": [
         {
           "description": "Enable pretty-printing for gdb",
           "text": "-enable-pretty-printing",
           "ignoreFailures": true
         }
-      ]
+      ],
+      "preLaunchTask": "g++.exe build active file",
+      "internalConsoleOptions": "neverOpen"
     }
   ]
 }
