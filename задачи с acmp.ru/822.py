@@ -1,0 +1,6 @@
+x1,y1,x2,y2,x3,y3=map(int,input().split())
+v1=int(pow((y2-y1)**2+(x2-x1)**2,0.5))
+v2=int(pow((y3-y1)**2+(x3-x1)**2,0.5))
+v3=int(pow((y3-y2)**2+(x3-x2)**2,0.5))
+p=int((v1+v2+v3)//2)
+print((pow(p*(p-v1)*(p-v2)*(p-v3),0.5)))
