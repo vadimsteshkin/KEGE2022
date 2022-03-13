@@ -2,7 +2,9 @@
 Решаю задачи с kompege.ru ,acmp.ru, kpolyakov.spb.ru
 
 id acmp.ru -https://acmp.ru/index.asp?main=user&id=333139
+
 tg @Vadim_steshkin
+
 Личный топ курсов:
 
 1/2: Открытый курс Алексея Кабанова
