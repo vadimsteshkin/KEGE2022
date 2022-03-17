@@ -1,4 +1,4 @@
-fi=open('27A.txt').readlines()
+fi=open('27B.txt').readlines()
 m=0
 def f(a,b):
     if (a+b)%7==0:return 1
