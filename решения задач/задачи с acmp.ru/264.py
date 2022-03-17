@@ -3,9 +3,10 @@ k=[int(x) for x in input().split()]
 m=0
 ma=0
 for i in k:
-    if i>0:
-        m+=1
-    else:
-        ma=max(m,ma)
-        m=0
-print(int(ma))
+    if i>=1:
+        k[k.index(i)]='a'
+k=''.join([str(i) for i in k])
+i=1
+while 'a'*i in k:
+    i+=1
+print(i-1)

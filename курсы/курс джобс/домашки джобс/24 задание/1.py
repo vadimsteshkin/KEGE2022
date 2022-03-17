@@ -1,0 +1,8 @@
+k=open('24_1.txt').readline()
+k=k.replace('XXX','X X, X')
+k=k.replace('YYY','Y Y Y')
+k=k.replace('ZZZ','Z Z Z')
+k=k.replace('XX','X X')
+k=k.replace('ZZ','Z Z')
+k=k.replace('YY','Y Y').split()
+print(len(max(k,key=lambda x: len(x))))
