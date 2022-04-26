@@ -1,4 +1,4 @@
-f=[int(i) for i in open('17.txt')]
+f=[int(i) for i in open('C:\Users\astes\PycharmProjects\solutions_ege_polyakov\варианты\джобс\17.txt')]
 q=0
 m=0
 s=sum([int(str(i)[0]) for i in f])
