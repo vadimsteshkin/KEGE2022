@@ -1,0 +1,2 @@
+f=open('24zadachi__kma.txt').readline().replace('XX','X X').replace('YY','Y Y').replace('ZZ','Z Z').replace('XX','X X').replace('YY','Y Y').replace('ZZ','Z Z').split()
+print(len(max(f, key=lambda x:len(x))))
