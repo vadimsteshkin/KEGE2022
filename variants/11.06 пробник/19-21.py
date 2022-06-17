@@ -5,6 +5,5 @@ def f(a,b,c,m):
     return any(h) if c%2!=m%2 else all(h)
 for i in range(1,280):
     for m in range(9):
-        if f(20,i,0,m) and m==5:
+        if f(20,i,0,m):
             print(i,m)
-            break
